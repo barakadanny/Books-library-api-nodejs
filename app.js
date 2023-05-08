@@ -1,8 +1,11 @@
 const http = require('node:http')
+const PORT = 3000;
 
 const server = http.createServer((req, res) => {
-    res.write("hello node")
-    res.end();
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({
+    data: 'Hello World!',
+  }));
 })
 
-server.listen(3000);
+server.listen(PORT);
