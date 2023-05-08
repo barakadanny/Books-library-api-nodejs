@@ -4,7 +4,7 @@
   "description": "This is a book management system api",
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/barakadanny/Books-library-api-nodejs/issues"
   },
-  "homepage": "https://github.com/barakadanny/Books-library-api-nodejs#readme"
+  "homepage": "https://github.com/barakadanny/Books-library-api-nodejs#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
