@@ -4,7 +4,7 @@
   "description": "This is a book management system api",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon main.js"
   },
   "repository": {
     "type": "git",
