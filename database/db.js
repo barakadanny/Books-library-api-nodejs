@@ -1,18 +1,7 @@
-const { MongoClient } = require('mongodb');
-// or as an es module:
-// import { MongoClient } from 'mongodb'
+const { default: mongoose } = require('mongoose');
 
-// Connection URL
-const url = 'mongodb://localhost:27017';
-const client = new MongoClient(url);
+async function connectDB(params) {
+  await mongoose.connect('mongodb://localhost:27017/books_management');
+}
 
-// Database Name
-const dbName = 'books_management';
-
-async function connect() {
-    await client.connect();
-    const db = await client.db(dbName);
-    return db;
-  }
-
-module.exports = connect;
+module.exports = connectDB;
