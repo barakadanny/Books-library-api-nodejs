@@ -6,4 +6,8 @@ authRoutes
     .route("/auth/signup")
     .post(AuthController.signup)
 
+authRoutes
+    .route("/auth/login")
+    .post(AuthController.login)
+
 module.exports = authRoutes
