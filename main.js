@@ -8,7 +8,6 @@ const connectDB = require('./database/db')
 app.set('view engine', 'pug')
 
 app.use(bodyParser.json())
-
 app.use(routes)
 
 connectDB().then(() => {
